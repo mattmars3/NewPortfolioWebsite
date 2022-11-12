@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Major+Mono+Display&family=Marmelad&family=Open+Sans&family=Roboto&family=Rubik&family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+
+#nameBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+
+    backdrop-filter: blur(10px);
+    border: black solid 2px;
+    box-shadow: 5px 5px 15px 5px black;
+    border-radius: 1%;
+
+    /* min-width: 150px; */
+    transition: .3s;
+
+}
+/* 
+    change fonts
+    box shadow
+
+*/
+
+
+/* Try a breathing blur effect on the backdrop */
+#nameBox:hover {
+    backdrop-filter: blur(25px);
+}
+
+
+
+/* This is the actual text for the box. Since I don't want it to be blurred, 
+I made it a separate element and positioned it right on the box
+*/
+#nameTitle {
+    color: black;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 7vh;
+    text-align: center;
+    text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+}
+
+.linkText {
+    margin: .5rem;
+    font-family: 'Roboto';
+    font-size: 5vh;
+    text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+
+    transition: .4s;
+}
+
+.linkText:hover {
+    /* Change this so it looks cooler on the hover */
+    color: white;
+}
+
+#linkBox {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#refreshDisclaimer {
+    position: absolute;
+    left: 2;
+    bottom: 0;
+    text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+    font-size: 2vh;
+
+    transition: .2s;
+}
+
+#refreshDisclaimer:hover {
+    color: green;
+}
+
+#picId {
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+}
+
+body {
+    background-size: cover;
+}
+
+/* 
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and
+ (min-device-pixel-ratio : 1.5) {
+    #nameBox {
+        animation: breathingBox 3s infinite;
+    }
+
+    @keyframes breathingBox {
+        0% {
+            backdrop-filter: blur(20px);
+        }
+        50% {
+            backdrop-filter: blur(40px);
+        }    
+        100% {
+            backdrop-filter: blur(20px);
+        }
+    
+}
+}
+*/
