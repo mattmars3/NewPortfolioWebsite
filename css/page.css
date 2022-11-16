@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Major+Mono+Display&family=Marmelad&family=Open+Sans&family=Roboto&family=Rubik&family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,19 +24,18 @@ body {
     align-items: stretch;
     flex-direction: column;
 
-    justify-content: space-between;
-
-
 }
 
 #pageTitle {
-    margin-top: 5%;
+
     padding: 20% 2% 20% 2%;
 
     backdrop-filter: blur(10px);
     border: black solid 2px;
     box-shadow: 5px 5px 15px 5px black;
     border-radius: 1%;
+
+    margin-bottom: 10%;
 }
 
  h1 {
@@ -55,6 +56,8 @@ body {
     border: black solid 2px;
     box-shadow: 5px 5px 15px 5px black;
     border-radius: 1%;
+
+    margin-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -94,12 +97,12 @@ body {
 
 }
 
-#contentBox {
+.contentBox {
     padding: 2%;
     border: black solid 2px;
     box-shadow: 5px 5px 15px 5px black;
     border-radius: 1%;
-    backdrop-filter: blur(50px) brightness(110%);
+    backdrop-filter: blur(50px) brightness(140%);
 
     margin-bottom: 5%;
 }

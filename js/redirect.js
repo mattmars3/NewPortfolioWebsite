@@ -1,5 +1,5 @@
 function redirect(pageName) {
-  window.location = "" + pageName + ".html";
+  window.location = pageName;
 }
 
 function home() {

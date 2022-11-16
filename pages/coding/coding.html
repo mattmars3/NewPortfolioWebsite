@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="/css/coding.css">
     <link rel="stylesheet" href="/css/page.css">
     <script src="/js/redirect.js"></script>
+<script defer src="/js/background.js" type="text/javascript"></script>
 </head>
-<body>
+<!-- 117, 352, 391, 145, 158, 184, 274 -->
+<body onload="loremPicsumBackground(352)">
     <div id="leftSideNav">
-        <!-- This is the main header that tells you the page and all parts of it -->
-        <div id="pageTitle">
-            <h1>Coding</h1>
-        </div>
         
         <!-- This is the namebox that will act as a navbar -->
-        <div id="nameBox">
+        <div id="nameBox" class="shadowBox">
             <h1 id="nameTitle">Matt Marsico</h1>
             <div id="linkBox">
-                <h2 class="linkText" id="codingText" onclick="redirect('coding/coding')">Coding</h2>
-                <h2 class="linkText" id="musicText" onclick="redirect('music/music')">Music</h2>
-                <h2 class="linkText" id="otherText" onclick="redirect('other/other')">Other</h2>
+                <h2 class="linkText" id="codingText" onclick="home()">Home</h2>
             </div>
         </div> 
+
+        <!-- This is the main header that tells you the page and all parts of it -->
+        <div id="pageTitle" class="shadowBox">
+            <h1>Coding</h1>
+        </div>
     </div>
+
+    <!-- This is all of the stuff on the right side of the screen (content) -->
     <div id="rightBox">
-        <div id="contentBox">
+        <div class="contentBox" class="shadowBox">
             <h2>Coding</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ut. Ratione eligendi ut fugit error, voluptatibus nobis molestiae porro asperiores obcaecati odit iusto inventore architecto debitis laudantium. Consequatur, delectus iste.
@@ -35,7 +38,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ut. Ratione eligendi ut fugit error, voluptatibus nobis molestiae porro asperiores obcaecati odit iusto inventore architecto debitis laudantium. Consequatur, delectus iste.
             </p>
         </div>
-        <div id="contentBox">
+        <div class="contentBox" class="shadowBox">
             <h2>Coding</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ut. Ratione eligendi ut fugit error, voluptatibus nobis molestiae porro asperiores obcaecati odit iusto inventore architecto debitis laudantium. Consequatur, delectus iste.
@@ -47,7 +50,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ut. Ratione eligendi ut fugit error, voluptatibus nobis molestiae porro asperiores obcaecati odit iusto inventore architecto debitis laudantium. Consequatur, delectus iste.
             </p>
         </div>
-        <div id="contentBox">
+        <div class="contentBox" class="shadowBox">
             <h2>Coding</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ut. Ratione eligendi ut fugit error, voluptatibus nobis molestiae porro asperiores obcaecati odit iusto inventore architecto debitis laudantium. Consequatur, delectus iste.
@@ -62,5 +65,4 @@
     </div>
 
 </body>
-<script defer src="/js/background.js" type="text/javascript">loremPicsumBackground();console.log('success');</script>
 </html>

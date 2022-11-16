@@ -76,13 +76,17 @@ function unsplashBackground(argsString) {
   const unsplashArgStr = argsString;
   const unsplashArgList = unsplashArgStr.split(" ");
 
-  const unsplashUrl = argsToUnsplashUrl([window.innerWidth, window.innerHeight], unsplashArgList);
+  const unsplashUrl = argsToUnsplashUrl(
+    [window.innerWidth, window.innerHeight],
+    unsplashArgList
+  );
   setBackgroundFromUrl(unsplashUrl);
 }
 
-function loremPicsumBackground(id=0) {
-  const picsumUrl = specificLoremPicsumPicture([window.innerWidth, window.innerHeight], id);
+function loremPicsumBackground(id = 0) {
+  const picsumUrl = specificLoremPicsumPicture(
+    [window.innerWidth, window.innerHeight],
+    id
+  );
   setBackgroundFromUrl(picsumUrl);
 }
-
-loremPicsumBackground()
