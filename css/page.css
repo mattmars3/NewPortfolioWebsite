@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Major+Mono+Display&family=Marmelad&family=Open+Sans&family=Roboto&family=Rubik&family=Ubuntu:ital,wght@0,400;1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto&family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -89,12 +91,18 @@ body {
 }
 
 #rightBox h2 {
+    font-family: 'Ubuntu'; 
+    
     text-decoration: underline;    
     padding-bottom: 1%;
 }
 
 #rightBox p {
-
+    margin-bottom: 1%;
+   /* 
+        Lato, 
+   */ 
+    font-family: 'Lato';
 }
 
 .contentBox {
@@ -102,7 +110,7 @@ body {
     border: black solid 2px;
     box-shadow: 5px 5px 15px 5px black;
     border-radius: 1%;
-    backdrop-filter: blur(50px) brightness(140%);
+    backdrop-filter: blur(50px) brightness(209%);
 
     margin-bottom: 5%;
 }
