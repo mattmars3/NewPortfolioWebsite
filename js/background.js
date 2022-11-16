@@ -71,23 +71,18 @@ function setBackgroundFromUrl(backgroundUrl) {
   document.body.style.backgroundImage = backgroundUrl;
 }
 
-
 /////////////////////////////////////////////////////////////////////
+function unsplashBackground(argsString) {
+  const unsplashArgStr = argsString;
+  const unsplashArgList = unsplashArgStr.split(" ");
 
-// const size = [1920, 1080];
-const size = [window.innerWidth, window.innerHeight];
+  const unsplashUrl = argsToUnsplashUrl([window.innerWidth, window.innerHeight], unsplashArgList);
+  setBackgroundFromUrl(unsplashUrl);
+}
 
-/*
-// UNSPLASH CODE
-const unsplashArgStr = "mountain";
-const unsplashArgList = unsplashArgStr.split(" ");
+function loremPicsumBackground(id=0) {
+  const picsumUrl = specificLoremPicsumPicture([window.innerWidth, window.innerHeight], id);
+  setBackgroundFromUrl(picsumUrl);
+}
 
-const unsplashUrl = argsToUnsplashUrl(size, unsplashArgList);
-setBackgroundFromUrl(unsplashUrl);
-*/
-
-
-// LOREM PICSUM CODE
-// const picsumUrl = argsToLoremPicsumUrl(picsumSize);
-const picsumUrl = specificLoremPicsumPicture(size);
-setBackgroundFromUrl(picsumUrl);
+loremPicsumBackground()

@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    display: flex;
+    height: 100%;
+}
+
+#leftSideNav {
+    display: flex;
+
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 30%; /* Set the width of the sidebar */
+
+    top: 0; /* Stay at the top */
+    padding-left: 3%;
+    padding-right: 1%;
+
+    align-items: stretch;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+
+}
+
+#pageTitle {
+    margin-top: 5%;
+    padding: 20% 2% 20% 2%;
+
+    backdrop-filter: blur(10px);
+    border: black solid 2px;
+    box-shadow: 5px 5px 15px 5px black;
+    border-radius: 1%;
+}
+
+ h1 {
+    color: black;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 7vh;
+    text-align: center;
+    text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+}
+
+
+#nameBox {
+    padding: 2%;
+
+    backdrop-filter: blur(10px);
+    border: black solid 2px;
+    box-shadow: 5px 5px 15px 5px black;
+    border-radius: 1%;
+    margin-bottom: 10%;
+}
+
+.linkText {
+    margin: .5rem;
+    font-family: 'Roboto';
+    font-size: 5vh;
+    text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+
+    transition: .4s;
+}
+
+.linkText:hover {
+    /* Change this so it looks cooler on the hover */
+    color: white;
+}
+
+#linkBox {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#rightBox {
+    padding: 2%;
+    padding-top: 3%;
+    overflow-y: scroll;
+    width: 70%;
+}
+
+#rightBox h2 {
+    text-decoration: underline;    
+    padding-bottom: 1%;
+}
+
+#rightBox p {
+
+}
+
+#contentBox {
+    padding: 2%;
+    border: black solid 2px;
+    box-shadow: 5px 5px 15px 5px black;
+    border-radius: 1%;
+    backdrop-filter: blur(50px) brightness(110%);
+
+    margin-bottom: 5%;
+}
