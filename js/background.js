@@ -80,6 +80,7 @@ function unsplashBackground(argsString) {
     [window.innerWidth, window.innerHeight],
     unsplashArgList
   );
+  console.log(unsplashUrl)
   setBackgroundFromUrl(unsplashUrl);
 }
 
