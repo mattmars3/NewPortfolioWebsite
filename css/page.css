@@ -93,7 +93,6 @@ body {
 #rightBox h2 {
     font-family: 'Ubuntu'; 
     
-    text-decoration: underline;    
     padding-bottom: 1%;
 }
 
@@ -110,7 +109,21 @@ body {
     border: black solid 2px;
     box-shadow: 5px 5px 15px 5px black;
     border-radius: 1%;
-    backdrop-filter: blur(50px) brightness(209%);
+    backdrop-filter: blur(50px) brightness(120%);
 
     margin-bottom: 5%;
+}
+
+.contentBox li {
+    list-style-type: none;
+    margin-left: 3%;
+}
+
+.contentBox a {
+    color: inherit;
+}
+
+.showText {
+    text-decoration: underline;
+    color: blue;
 }
