@@ -15,20 +15,24 @@
     <div id="leftSideNav">
         
         <!-- This is the namebox that will act as a navbar -->
-        <div id="nameBox" class="shadowBox">
+        <div id="nameBox" class="shadowBox" onclick="home()">
             <h1 id="nameTitle">Matt Marsico</h1>
-            <div id="linkBox">
-                <h2 class="linkText" id="codingText" onclick="home()">Home</h2>
-            </div>
         </div> 
 
         <!-- This is the main header that tells you the page and all parts of it -->
         <div id="pageTitle" class="shadowBox">
             <h1>Coding</h1>
         </div>
+
+        <div id="linkBox" class="shadowBox">
+            <h2 class="linkText" onclick="home()">Home</h2>
+            <h2 class="linkText" onclick="redirect('/pages/music/music.html')">Music</h2>
+            <h2 class="linkText" onclick="redirect('/pages/other/other.html')">Other</h2>
+        </div>
     </div>
 
-    <!-- This is all of the stuff on the right side of the screen (content) -->
+
+<!-- This is all of the stuff on the right side of the screen (content) -->
     <div id="rightBox">
         <div class="contentBox" class="shadowBox">
             <h2>

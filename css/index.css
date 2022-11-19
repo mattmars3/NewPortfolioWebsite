@@ -84,6 +84,9 @@ I made it a separate element and positioned it right on the box
     right: 1%;
     bottom: 0;
     text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white;
+    
+    /* Debug purposes - see the picsum id of the picture */
+    visibility: hidden;
 }
 
 body {

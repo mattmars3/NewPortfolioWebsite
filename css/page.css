@@ -13,6 +13,8 @@ body {
     height: 100%;
 }
 
+/* All stuff on the left side of the screen */
+
 #leftSideNav {
     display: flex;
 
@@ -26,18 +28,45 @@ body {
     align-items: stretch;
     flex-direction: column;
 
+    justify-content: space-around;
 }
 
-#pageTitle {
-
-    padding: 20% 2% 20% 2%;
-
+.shadowBox {
     backdrop-filter: blur(10px);
     border: black solid 2px;
     box-shadow: 5px 5px 15px 5px black;
     border-radius: 1%;
+    flex-grow: 1;
+
+}
+
+.shadowBox h1, h2 {
+    position: relative;
+    justify-content: center;
+
+    top: 18%;
+}
+
+/* Big Matt Marsico Letters */
+#nameBox {
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+}
+
+/* Big H1 tag with page title */
+#pageTitle {
+
+    padding: 20% 2% 20% 2%;
+
 
     margin-bottom: 10%;
+}
+
+/* All redirects to other pages */
+#linkBox {
+    margin-bottom: 10% !important;
 }
 
  h1 {
@@ -51,17 +80,7 @@ body {
 }
 
 
-#nameBox {
-    padding: 2%;
 
-    backdrop-filter: blur(10px);
-    border: black solid 2px;
-    box-shadow: 5px 5px 15px 5px black;
-    border-radius: 1%;
-
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
 
 .linkText {
     margin: .5rem;
@@ -83,6 +102,10 @@ body {
     margin: 0;
 }
 
+/**************************************************************************/
+/************ Everything for Right Box Side  ******************************/
+/**************************************************************************/
+
 #rightBox {
     padding: 2%;
     padding-top: 3%;
@@ -90,18 +113,17 @@ body {
     width: 70%;
 }
 
-#rightBox h2 {
+.contentBox h2 {
     font-family: 'Ubuntu'; 
     
     padding-bottom: 1%;
 }
 
-#rightBox p {
+.contentBox p {
     margin-bottom: 1%;
-   /* 
-        Lato, 
-   */ 
+    line-height: 130%;
     font-family: 'Lato';
+    font-size: 110%;
 }
 
 .contentBox {
