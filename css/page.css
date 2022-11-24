@@ -149,3 +149,11 @@ body {
     text-decoration: underline;
     color: blue;
 }
+
+.showMoreButton {
+
+}
+
+.moreContent {
+    display: none;    
+}
