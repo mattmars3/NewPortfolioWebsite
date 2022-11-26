@@ -1,23 +1,29 @@
-
 function showMore(elementId) {
-  const pTagCollection = document.getElementById(elementId).querySelectorAll('p.moreContent');
+  // get all moreContent paragraph tags
+  const pTagCollection = document
+    .getElementById(elementId)
+    .querySelectorAll(".moreContent");
 
-  const showMoreButton = document.getElementById(elementId).getElementsByClassName('showMoreButton')[0];
-  
-  let visibility = '';
-  let buttonText = '';
-  if (showMoreButton.innerText == 'Show More') {
-    buttonText = 'Hide Info'
-    visibility = 'block'
+  // get the showmore button
+  const showMoreButton = document
+    .getElementById(elementId)
+    .getElementsByClassName("showMoreButton")[0];
+
+  // visibilty of the text and inner text of button
+  let visibility = "";
+  let buttonText = "";
+
+  // if button says show more then
+  if (showMoreButton.innerText == "Show More") {
+    buttonText = "Hide Info";
+    visibility = "block";
   } else {
-    buttonText = 'Show More'
-    visibility = 'none'
+    buttonText = "Show More";
+    visibility = "none";
   }
 
   for (let pTag in pTagCollection) {
-    pTagCollection[pTag].style.display = visibility; 
     showMoreButton.innerText = buttonText;
+    pTagCollection[pTag].setAttribute("style", `display:${visibility};`);
   }
-
-  // fix css issue
 }

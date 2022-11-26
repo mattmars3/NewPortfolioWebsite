@@ -80,7 +80,7 @@ function unsplashBackground(argsString) {
     [window.innerWidth, window.innerHeight],
     unsplashArgList
   );
-  console.log(unsplashUrl)
+  console.log(unsplashUrl);
   setBackgroundFromUrl(unsplashUrl);
 }
 
@@ -90,4 +90,19 @@ function loremPicsumBackground(id = 0) {
     id
   );
   setBackgroundFromUrl(picsumUrl);
+}
+
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+/* 
+  ideas: crop the picture so it maintains its resolution
+
+*/
+
+function setRandomBackgroundFile() {
+  const randNum = Math.floor(Math.random() * 4);
+  const url = "url(/images/" + randNum + ".jpg)";
+  setBackgroundFromUrl(url);
 }

@@ -145,13 +145,25 @@ body {
     color: inherit;
 }
 
+.contentBox h3 {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
 .showText {
     text-decoration: underline;
     color: blue;
 }
 
 .showMoreButton {
+    transition: .2s;
 
+    padding: 1% 0 1% 2%;
+}
+
+.showMoreButton:hover {
+    color: white;
 }
 
 .moreContent {
