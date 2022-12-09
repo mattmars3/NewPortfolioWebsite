@@ -158,7 +158,8 @@ body {
 
 .showMoreButton {
     transition: .2s;
-
+    font-size: 7vh;
+    font-weight: bold;
     padding: 1% 0 1% 2%;
 }
 

@@ -14,11 +14,11 @@ function showMore(elementId) {
   let buttonText = "";
 
   // if button says show more then
-  if (showMoreButton.innerText == "Show More") {
-    buttonText = "Hide Info";
+  if (showMoreButton.innerText == "+") {
+    buttonText = "-";
     visibility = "block";
   } else {
-    buttonText = "Show More";
+    buttonText = "+";
     visibility = "none";
   }
 
